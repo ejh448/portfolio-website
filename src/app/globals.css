@@ -19,3 +19,80 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+/* Add to your globals.css or any CSS file you're using */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px); /* Start from below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End at normal position */
+  }
+}
+
+/* This will apply the animation to the text */
+.fade-in-right {
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+/* Add to your globals.css or any CSS file you're using */
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px); /* Start from below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End at normal position */
+  }
+}
+
+/* This will apply the animation to the text */
+.fade-in-left {
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+
+
+
+/* */
+/* Basic styling for the header */
+header {
+  font-size: 2rem;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+/* Add some padding to the body content to prevent it from being hidden under the fixed header */
+main {
+  padding-top: 80px; /* Adjust for header height */
+}
+
+/* Style the sections */
+section {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5ms;
+}
+
+section:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+section:nth-child(odd) {
+  background-color: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
