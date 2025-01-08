@@ -71,9 +71,7 @@ header {
 }
 
 /* Add some padding to the body content to prevent it from being hidden under the fixed header */
-main {
-  padding-top: 80px; /* Adjust for header height */
-}
+
 
 /* Style the sections */
 section {
@@ -84,13 +82,15 @@ section {
   transition: background-color 0.5ms;
 }
 
+/*
 section:nth-child(even) {
-  background-color: #f0f0f0;
+  background-color: #000000;
 }
 
 section:nth-child(odd) {
   background-color: #000000;
 }
+  */
 
 html {
   scroll-behavior: smooth;
