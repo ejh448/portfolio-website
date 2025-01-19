@@ -9,7 +9,7 @@ export default function HeroSection() {
         Hello, I'm <span className="text-blue-500">Evan</span>.
       </h1>
       <h2 className="text-2xl tracking-[0.12em] font-bold tracking-wider fade-in-left" style={{ fontSize: '40px', marginTop: '24px' }}>
-        I am a <span className="text-blue-500">Software Engineer</span>.
+        I am a <span className="text-blue-500">Software Developer</span>.
       </h2>
     </section>
   );
